@@ -1,0 +1,43 @@
+.body {
+  background-color: rgb(245, 215, 230);
+}
+.button {
+  background-color: #fa75b5;
+
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  border: none;
+  border-radius: 3px;
+
+  position: relative;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease 0s;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fa66ad;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(239, 229, 234, 0.3);
+  border: 1px solid rgba(239, 229, 234, 0.5);
+
+  animation: button-circle 2s ease forwards;
+}
+
+@keyframes button-circle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}

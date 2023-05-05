@@ -32,5 +32,5 @@ function checkTest() {
         result++;
     }
 
-    alert("Количество правильных ответов: " + result);
+    // alert("Количество правильных ответов: " + result);
 }

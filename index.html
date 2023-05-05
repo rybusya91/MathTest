@@ -5,30 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Indie+Flower&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css"
   </head>
   <body>
-    <p>1. Сколько будет 2+2?</p>
-    <input type="text" id="q1" />
-    <br />
-    <p>2. Сколько будет 2*3?</p>
-    <input type="text" id="q2" />
-    <br />
-    <p>3. Сколько будет 20/2?</p>
-    <input type="text" id="q3" />
-    <br />
-    <p>4. Сколько будет 4+4?</p>
-    <input type="text" id="q4" />
-    <br />
-    <p>5. Сколько будет 2-3?</p>
-    <input type="text" id="q5" />
-    <br />
-    <p>6. Сколько будет 5%2?</p>
-    <input type="text" id="q6" />
-    <br />
-    <p>7. Сколько будет 4+5?</p>
-    <input type="text" id="q7" />
-    <br /><br />
-    <button id="finish">Отправить тест</button>
+    <div class="body">
+      <p>1. Сколько будет 2+2?</p>
+      <input type="text" id="q1" />
+      <br />
+      <p>2. Сколько будет 2*3?</p>
+      <input type="text" id="q2" />
+      <br />
+      <p>3. Сколько будет 20/2?</p>
+      <input type="text" id="q3" />
+      <br />
+      <p>4. Сколько будет 4+4?</p>
+      <input type="text" id="q4" />
+      <br />
+      <p>5. Сколько будет 2-3?</p>
+      <input type="text" id="q5" />
+      <br />
+      <p>6. Сколько будет 5%2?</p>
+      <input type="text" id="q6" />
+      <br />
+      <p>7. Сколько будет 4+5?</p>
+      <input type="text" id="q7" />
+      <br /><br />
+      <!-- эффект кнопки Отправить текст -->
+      <div class="wrapper">
+        <main class="page">
+          <div class="page__item">
+            <button data-ripple="once" class="button" type="button" id="finish">
+              Отправить тест
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+
     <script src="math.js"></script>
+    <script src="button-circle.js"></script>
   </body>
 </html>
